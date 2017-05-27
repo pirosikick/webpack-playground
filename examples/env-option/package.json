@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "webpack --env.target=production"
+  }
+}
