@@ -9,7 +9,8 @@ module.exports = {
     vendor: ['react', 'react-dom'],
   },
   output: {
-    filename: '[name].[chunkhash].js',
+    // filename: '[name].[chunkhash].js',
+    filename: '[name].js',
     path: path.join(__dirname, './build'),
     publicPath: 'build',
   },
@@ -27,14 +28,6 @@ module.exports = {
       name: [
         // entry.vendorを共通モジュールとして使用
         'vendor',
-
-        // manifestにはwebpackのRuntimeと分割ファイルの情報（ハッシュ値など）が入る
-        // manifestを作らない場合、vendorにこれらが含まれてしまい、
-        // vendorで指定したモジュールに変更がない場合でも影響を受けるので、
-        // 長くキャッシュしたい場合はmanifestを作る方がよい
-        // 下記1行をコメントアウトし、entry-a.jsを変更した時に、
-        // vendorファイルのハッシュが変わるのを確認すると理解しやすいです。
-        'manifest'
       ],
 
       // 省略した場合、output.filenameが使われる

@@ -17,6 +17,7 @@ module.exports = [
       rules: [{
         test: /\.js$/,
         loader: 'babel-loader',
+        exclude: /node_modules/,
         options: {
           presets: ['es2015']
         }
@@ -24,6 +25,7 @@ module.exports = [
     },
     plugins,
   },
+  // tree shaking有り
   {
     entry: './entry',
     output: { filename: 'tree-shaking.js' },
@@ -31,6 +33,7 @@ module.exports = [
       rules: [{
         test: /\.js$/,
         loader: 'babel-loader',
+        exclude: /node_modules/,
         options: {
           // BabelでES Moduleの変換を無効にする
           presets: [['es2015', { modules: false }]]

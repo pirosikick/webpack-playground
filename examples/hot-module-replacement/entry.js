@@ -1,7 +1,7 @@
 import hello from './hello';
 
 function render() {
-  document.body.innerText = 'MR' + hello();
+  document.body.innerText = hello();
 }
 render();
 
