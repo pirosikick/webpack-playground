@@ -32,6 +32,8 @@ https://yarnpkg.com/en/docs/install
   - UglifyjsPluginを使ったコード圧縮のサンプル
 - hot-module-replacement/
   - Hot Module Repleacementのサンプル
+- performance-field/
+  - performanceフィールドのサンプル
 - externals-field/
   - externalsフィールドを使ったファイル分割のサンプル
 - commons-chunk-plugin-1/
