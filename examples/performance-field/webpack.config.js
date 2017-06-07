@@ -1,6 +1,5 @@
 module.exports = {
   entry: {
-    vendor: ['react', 'react-dom'],
     main: './entry',
   },
   output: {
