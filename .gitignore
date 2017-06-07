@@ -61,3 +61,4 @@ typings/
 output.js
 *.output.js
 *.map
+*.bundle.min.js
