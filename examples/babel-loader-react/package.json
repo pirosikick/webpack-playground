@@ -1,9 +1,9 @@
 {
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.0",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^2.4.1"
+    "webpack": "^3.0.0"
   },
   "dependencies": {
     "react": "^15.5.4",

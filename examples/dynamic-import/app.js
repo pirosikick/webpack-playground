@@ -11,7 +11,7 @@ window.onload = () => {
 
   document.querySelector('#show-a').addEventListener('click', () => {
     // page-a.jsとその依存関係は別ファイルに出力される
-    import('./page-a').then(({ default: element }) => {
+    import(/* webpackChunkName: "page-a" */ './page-a').then(({ default: element }) => {
       // page-aが読み込まれたタイミングで実行
       render(element);
     }).catch(err => {
@@ -22,7 +22,7 @@ window.onload = () => {
   });
 
   document.querySelector('#show-b').addEventListener('click', () => {
-    import('./page-b').then(({ default: element }) => {
+    import(/* webpackChunkName: "page-b" */ './page-b').then(({ default: element }) => {
       render(element);
     }).catch(err => {
       console.log(err);
@@ -31,7 +31,7 @@ window.onload = () => {
   });
 
   document.querySelector('#show-c').addEventListener('click', () => {
-    import('./page-c').then(({ default: element }) => {
+    import(/* webpackChunkName: "page-c" */ './page-c').then(({ default: element }) => {
       render(element);
     }).catch(err => {
       console.log(err);
