@@ -1,3 +1,5 @@
+# 「入門webpack2」サンプル　webpack3版
+
 ## 事前準備
 
 ### Node.jsのインストール
@@ -42,5 +44,8 @@ https://yarnpkg.com/en/docs/install
   - CommonsChukPluginを使ったサンプル（分割するモジュールを明示的に指定）
 - dynamic-import/
   - import関数を使ったモジュールの動的読み込みのサンプル
+  - webpack3のmagic comment対応版
 - tree-shaking/
   - Tree shakingのサンプル
+- scope-hoisting/
+  - webpack3で導入されたScope Hoistingのサンプル

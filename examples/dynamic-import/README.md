@@ -16,6 +16,7 @@ $ ./node_modules/.bin/webpack
 $ yarn run webpack
 ```
 
-- build以下にapp.bundle.js、0~1.bundle.jsを出力します。
+- build以下にapp.bundle.js、page-a.chunk.js, page-b.chunk.js, page-c.chunk.jsを出力します。
+- webpack2では、0~2.bundle.jsのような分かりにくい名前でしか出力できませんでしたが、`import(/* webpackChunkName: "page-a" */ './page-a')`のようにコメントを書くことで任意の名前を指定できるようになりました。
 - webpack実行後、index.htmlをブラウザで開くと動作を確認できます。
-- ブラウザの開発者ツールで、0~1.bundle.jsが遅れてロードされているのが確認できます。
+- ブラウザの開発者ツールで、page-a.chunk.js, page-b.chunk.js, page-c.chunk.jsが遅れてロードされているのが確認できます。
